@@ -1,6 +1,5 @@
 #!/bin/bash
 cd /var/www/html
-mysql -hmysql mysql -u root -p${MYSQL_ROOT_PASSWORD} -e "CREATE DATABASE IF NOT EXISTS ${MYSQL_DATABASE}"
 chmod 777 ./storage/app
 chmod 777 -R ./storage/framework/cache
 chmod 777 -R ./storage/framework/sessions
